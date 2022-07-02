@@ -10,9 +10,17 @@ public class Deck {
 
   public Deck(boolean gameDeck) {
     cards = new ArrayList<Card>();
-    for (int a = 0; a < 13; a++) {
-      Card card = new Card(a);
-      cards.add(card);
+    
+    Card card;
+    for (int a = 0; a < 16; a++) {
+      card = new Card(a, "hearts");
+      cards.add (card);
+      card = new Card (a, "clubs");
+      cards.add (card);
+      card = new Card (a, "spades");
+      cards.add (card);
+      card = new Card (a, "diamonds");
+      cards.add (card);
     }
   }
 
